@@ -1,4 +1,7 @@
 <app-head [nombre]="nombreHome"></app-head>
 
 
-<app-footer></app-footer>
+<app-footer (saludo)="saludar($event)"></app-footer>
+
+<br>
+{{valorFooterHijo.nombre}}

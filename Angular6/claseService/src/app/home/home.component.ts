@@ -8,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   public nombreHome: String = 'pepito';
+  public valorFooterHijo: String;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  saludar(event) {
+    console.log(event);
+    this.valorFooterHijo = event;
+  }
 }
