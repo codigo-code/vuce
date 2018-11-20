@@ -1,0 +1,25 @@
+<div class="card" *ngFor="let item of listCard">
+    <div class="card-block">
+        <div class="alert alert-warning alert-sm">
+            <button type="button" class="close" aria-label="Close">
+                <clr-icon aria-hidden="true" shape="close"></clr-icon>
+            </button>
+            <div class="alert-item static">
+                <span class="alert-text">
+                    {{item.nombre}}
+                </span>
+            </div>
+        </div>
+        <div class="card-media-block wrap">
+            <img class="card-media-image" [src]="item.foto" />
+            <div class="card-media-description">
+            </div>
+        </div>
+        <p class="card-text">
+        </p>
+    </div>
+    <div class="card-footer">
+        <a class="card-link">Button One</a>
+        <a class="card-link">Button Two</a>
+    </div>
+</div>
